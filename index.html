@@ -39,16 +39,16 @@
     <br><br>
     <main>
         <!--poetry-->
-        <div id="poetry" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Poetry</strong></h1></div>
+        <div id="poetry" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Poetry</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in poetry" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in poetry" :key="books.id">
               <div class="w-3/12">
                   <a href="https://apsu6.github.io/KurdishHome/#htd">
-                      <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                      <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                   </a>
               </div>
 
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col w-9/12">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -57,15 +57,15 @@
 
          <br><br>
         <!--classic-->
-        <div id="classic" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Classics</strong></h1></div>
+        <div id="classic" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Classics</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in classics" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in classics" :key="books.id">
                <div class="w-3/12">
                    <a href="https://apsu6.github.io/KurdishHome/#htd">
-                       <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                       <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                    </a>
                </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -76,15 +76,15 @@
         </svg></a></div>
         <br><br>
         <!--non-fiction-->
-        <div id="non-fiction" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Non-Fiction</strong></h1></div>
+        <div id="non-fiction" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Non-Fiction</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in nonfiction" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in nonfiction" :key="books.id">
                 <div class="w-3/12">
                     <a href="https://apsu6.github.io/KurdishHome/#htd">
-                        <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                        <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                     </a>
                 </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -95,15 +95,15 @@
         </svg></a></div>
           <br><br>
         <!--fantasy-->
-        <div id="fantasy" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Fantasy</strong></h1></div>
+        <div id="fantasy" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Fantasy</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in fantasy" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in fantasy" :key="books.id">
                 <div class="w-3/12">
                     <a href="https://apsu6.github.io/KurdishHome/#htd">
-                        <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                        <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                     </a>
                 </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -114,15 +114,15 @@
         </svg></a></div>
          <br><br>
         <!--science-fiction-->
-        <div id="science-fiction" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Science-Fiction</strong></h1></div>
+        <div id="science-fiction" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Science-Fiction</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in sciencefiction" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in sciencefiction" :key="books.id">
                <div class="w-3/12">
                    <a href="https://apsu6.github.io/KurdishHome/#htd">
-                       <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                       <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                    </a>
                </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -133,15 +133,15 @@
         </svg></a></div>
          <br><br>
         <!--thrillers-->
-        <div id="thrillers" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Thrillers</strong></h1></div>
+        <div id="thrillers" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Thrillers</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in thrillers" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in thrillers" :key="books.id">
               <div class="w-3/12">
                   <a href="https://apsu6.github.io/KurdishHome/#htd">
-                      <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                      <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                   </a>
               </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -152,15 +152,15 @@
         </svg></a></div>
           <br><br>
         <!--historical-->
-        <div id="historical" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Historical</strong></h1></div>
+        <div id="historical" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Historical</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in historical" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in historical" :key="books.id">
                <div class="w-3/12">
                    <a href="https://apsu6.github.io/KurdishHome/#htd">
-                       <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                       <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                    </a>
                </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -171,15 +171,15 @@
         </svg></a></div>
           <br><br>
         <!--memoirs-->
-        <div id="memoirs" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Memoirs</strong></h1></div>
+        <div id="memoirs" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Memoirs</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in memooirs" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in memooirs" :key="books.id">
                 <div class="w-3/12">
                     <a href="https://apsu6.github.io/KurdishHome/#htd">
-                        <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                        <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                     </a>
                 </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
@@ -190,15 +190,15 @@
         </svg></a></div>
           <br><br>
         <!--contemporary-->
-        <div id="contemporary" class=" md:mx-16 px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Contemporary</strong></h1></div>
+        <div id="contemporary" class=" px-4 border-b-2 border-black-200"> <h1 class="my-4" style="font-size: x-large"><strong style="color: #1BACAF" data-aos="fade-left">Contemporary</strong></h1></div>
         <div data-aos="fade-left" class="md:grid md:grid-cols-2 flex flex-col">
-            <div class="flex justify-center items-center my-10" v-for="books in contemporary" :key="books.id">
+            <div class="flex justify-center items-start my-10" v-for="books in contemporary" :key="books.id">
                <div class="w-3/12">
                    <a href="https://apsu6.github.io/KurdishHome/#htd">
-                       <img class="w-24 md:mx-12 mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
+                       <img class="object-cover mx-2 rounded-lg hover:shadow-2xl" :src="books.imgsrc" alt="Img">
                    </a>
                </div>
-                <div class="flex flex-wrap mx-6 md:mx-0 flex-col justify-center w-9/12 md:justify-start">
+                <div class="flex flex-wrap mx-6 md:mx-4 flex-col justify-center w-9/12 md:justify-start">
                     <h1 class="md:text-2xl text-xl">{{books.title}}</h1>
                     <p class="md:text-sm text-xs">{{books.Description}}</p>
                 </div>
